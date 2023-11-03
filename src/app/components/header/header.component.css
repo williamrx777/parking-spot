@@ -1,0 +1,27 @@
+.container {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 45px;
+  position: relative;
+  width: 100%;
+}
+
+.menu > ul {
+  display: flex;
+  gap: 20px;
+}
+
+.menu > ul > li{
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 300;
+  list-style-type: none;
+}
+
+.container-link{
+  text-decoration: none;
+  color: white;
+}

@@ -1,0 +1,83 @@
+
+<div class="home-page">
+  <div class="home-order-wrapper">
+    <div class="reservation-widget-wrapper">
+      <div class="widget-sticky-container">
+        <form (ngSubmit)="cadaster()" >
+          <div class="widget">
+            <div class="airport-select ">
+              <input class="control-wrapper" type="text" name="parkingSpotNumber" [(ngModel)]="cadasterParking.parkingSpotNumber"  placeholder="parking spot number">
+              <input class="control-wrapper" type="text" name="licensePlateCar" [(ngModel)]="cadasterParking.licensePlateCar" placeholder="license plate car">
+              <input class="control-wrapper" type="text" name="brandCar" [(ngModel)]="cadasterParking.brandCar" placeholder="brand car">
+              <input class="control-wrapper" type="text" name="modelCar" [(ngModel)]="cadasterParking.modelCar" placeholder="model car">
+              <input class="control-wrapper" type="text" name="colorCar" [(ngModel)]="cadasterParking.colorCar" placeholder="color car">
+              <input class="control-wrapper" type="text" name="responsibleName" [(ngModel)]="cadasterParking.responsibleName" placeholder="responsible name">
+              <input class="control-wrapper" type="text" name="apartment" [(ngModel)]="cadasterParking.apartment" placeholder="apartment">
+              <input class="control-wrapper" type="text" name="block" [(ngModel)]="cadasterParking.block" placeholder="block">
+              <button class="button" >Reserve</button>
+            </div>
+            <div class="message" [ngClass]="{'show': mensagem}">
+              {{ mensagem }}
+            </div>
+            <div class="home-main-block">
+
+              <div class="home-main-block__container">
+                <div class="home-main-block__container__image">
+                  <div class="promo-block">
+                    <h1 class="promo-block__title">
+                      Airport Parking that Hits the Spot
+                  </h1>
+                  <div class="separator"></div>
+                  <div class="promo-block__border tps-short-border">
+                    <h2 class="promo-block__benefit">
+                      Easy long-term parking at airports nationwide.
+                  </h2>
+                  <div class="promo-block__benefit">
+                    Reserve now and save.
+                </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="home-parking-perfect-block">
+    <div class="home-parking-perfect-block__container">
+      <div class="home-parking-perfect-block__container__title">Parking, Perfected</div>
+      <div class="home-parking-perfect-block__container__cards">
+        <div class="card">
+          <img src="https://www.theparkingspot.com/public-web-ng2/dist/assets/images/enter-the-facility.webp" alt="driver scans qr code at the parking spot entry kiosk" loading="lazy">
+          <div class="separator"></div>
+          <div class="card__title">
+            Scan In and Park
+          </div>
+          <div class="card__description">
+            Use our touchless entry, then just pick your spot.
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://www.theparkingspot.com/public-web-ng2/dist/assets/images/shuttle-pick-up-at-your-car.webp" alt="shuttle driver moves luggage from vehicle to shuttle" loading="lazy">
+          <div class="separator"></div>
+          <div class="card__title">
+            Ride to the Terminal
+          </div>
+          <div class="card__description">
+            Our shuttle will be at your spot to pick you up.
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://www.theparkingspot.com/public-web-ng2/dist/assets/images/app-to-track-shuttle-location.webp" alt="passenger locating airport shuttle using the app" loading="lazy">
+          <div class="separator"></div>
+          <div class="card__title">
+            Happy Returns
+          </div>
+          <div class="card__description">Back home? Track the shuttle on our app. You'll be at your car in no time.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

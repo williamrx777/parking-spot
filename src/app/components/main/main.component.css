@@ -1,0 +1,134 @@
+
+
+.airport-select{
+
+  margin: 55px;
+  text-align: center;
+}
+.control-wrapper {
+      margin: 0;
+      font-family: Roboto,sans-serif;
+      font-size: 16px;
+      color: #a3a3a3;
+      margin-left: 10px;
+      padding: 15px 25px;
+      border-radius: 3px;
+}
+
+.button {
+      margin: 0;
+      font-family: Roboto,sans-serif;
+      font-size: 16px;
+      padding: 15px 25px;
+      background-color: yellow;
+      margin-left: 10px;
+      border-radius: 3px;
+}
+.home-main-block{
+  display: flex;
+  justify-content: center;
+}
+.home-main-block__container{
+  min-width: 1200px;
+  min-height: 200px;
+}
+
+.home-main-block__container__image {
+  background-image: url(https://www.theparkingspot.com/public-web-ng2/dist/assets/images/home-hero.webp);
+  background-repeat: no-repeat;
+  display: block;
+  min-height: auto;
+  min-width: auto;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+.home-main-block__container .promo-block{
+  z-index: 1;
+}
+.promo-block{
+
+  background-color: #fff;
+      margin: auto 50px;
+      padding: 50px 25px 50px 30px;
+      width: 432px;
+      height: 415px;
+}
+
+.home-main-block__container .promo-block__title{
+  font-family: Roboto,sans-serif;
+    font-weight: 700;
+    margin-top: 0;
+
+}
+.separator {
+  width: 79px;
+  height: 6px;
+  background-color: #fbcf1d;
+  margin-top: 15px  ;
+  margin-bottom: 15px;
+}
+.promo-block__border tps-short-border{
+  width: 79px;
+  height: 6px;
+  background-color: #fbcf1d;
+
+}
+
+.home-main-block__container .promo-block__benefit{
+  font-family: Roboto,sans-serif;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.home-parking-perfect-block__container__title {
+  text-align: center;
+  font-size: 40px;
+  margin: 60px;
+  font-family: Roboto,sans-serif;
+  font-weight: 700;
+
+}
+
+.card__border tps-short-border{
+  width: 79px;
+  height: 6px;
+  background-color: #fbcf1d;
+}
+.home-parking-perfect-block__container__cards{
+  justify-content: space-around;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.home-parking-perfect-block__container__cards .card{
+  flex: 0 0 33%;
+  max-width: 370px;
+}
+.home-parking-perfect-block__container__cards .card img{
+  width: 100%;
+}
+.card__title{
+  font-family: Roboto,sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+    margin-bottom: 5px;
+}
+.card__description{
+  font-size: 24px;
+  font-family: sans-serif;
+}
+
+.message {
+  background-color: #4CAF50; /* Cor de fundo verde */
+  color: white; /* Cor do texto */
+  padding: 10px; /* Espaçamento interno */
+  text-align: center;
+  display: none; /* Inicialmente oculto */
+}
+
+.message.show {
+  display: block; /* Exibir quando a mensagem estiver definida */
+}

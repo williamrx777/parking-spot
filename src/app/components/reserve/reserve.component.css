@@ -1,0 +1,49 @@
+.container {
+  width: 100%;
+  overflow-x: auto; /* Adiciona uma barra de rolagem horizontal se a tabela for muito larga */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.container-content {
+  background-color: #f2f2f2; /* Cor de fundo alternada para linhas */
+}
+
+.container-content > th, .container-content > td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.container-content > th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.container-content > tr:nth-child(even) {
+  background-color: #f2f2f2; /* Cor de fundo alternada para linhas */
+}
+
+.container-content > tr:hover {
+  background-color: #ddd; /* Cor de fundo quando o mouse passa por cima */
+}
+
+/* styles.css ou styles.scss */
+.delete-button {
+  background-color: #ff5733; /* Cor de fundo do botão */
+  color: white; /* Cor do texto */
+  border: none; /* Remova a borda */
+  padding: 5px 10px; /* Espaçamento interno */
+  cursor: pointer; /* Altera o cursor ao passar o mouse */
+  border-radius: 4px; /* Cantos arredondados */
+  margin-right: 5px; /* Espaçamento direito */
+}
+
+.delete-button:hover {
+  background-color: #ff3019; /* Cor de fundo quando passa o mouse */
+}

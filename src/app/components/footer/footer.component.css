@@ -1,0 +1,48 @@
+/* Adicione esses estilos ao seu arquivo de estilo (styles.css ou styles.scss) */
+
+.footer {
+  background-color: #000000; /* Cor de fundo do rodapé */
+  color: #fff; /* Cor do texto no rodapé */
+  padding: 20px 0; /* Espaçamento interno */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-logo img {
+  width: 150px; /* Largura do logotipo */
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline; /* Sublinhar ao passar o mouse */
+}
+
+.footer-social a {
+  margin-right: 10px;
+}
+
+.footer-social img {
+  width: 30px; /* Largura dos ícones sociais */
+}
