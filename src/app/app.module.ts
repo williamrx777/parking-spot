@@ -10,6 +10,8 @@ import { MainComponent } from './components/main/main.component';
 import { FooterComponent } from './components/footer/footer.component'
 import { FormsModule } from '@angular/forms';
 import { ReserveComponent } from './components/reserve/reserve.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +25,10 @@ import { ReserveComponent } from './components/reserve/reserve.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -31,6 +31,7 @@
 .home-main-block__container{
   min-width: 1200px;
   min-height: 200px;
+  z-index: 0;
 }
 
 .home-main-block__container__image {
@@ -131,4 +132,14 @@
 
 .message.show {
   display: block; /* Exibir quando a mensagem estiver definida */
+}
+
+@media only screen and (max-width: 768){
+  .home-main-block__container{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+
+  }
 }

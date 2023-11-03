@@ -1,6 +1,8 @@
 <app-header></app-header>
+
 <div class="container">
-  <table class="container-table">
+
+  <table *ngIf="loading" class="container-table">
     <tr class="container-content">
       <th>id</th>
       <th>Parking Spot Number</th>
@@ -14,19 +16,23 @@
       <th>Block</th>
       <th>Cancel</th>
     </tr>
-    <tr class="container-content" *ngFor="let dado of dados">
-      <td>{{dado.id}}</td>
-      <td>{{dado.parkingSpotNumber}}</td>
-      <td>{{dado.licensePlateCar}}</td>
-      <td>{{dado.brandCar}}</td>
-      <td>{{dado.modelCar}}</td>
-      <td>{{dado.colorCar}}</td>
-      <td>{{dado.registrationDate}}</td>
-      <td>{{dado.responsibleName}}</td>
-      <td>{{dado.apartment}}</td>
-      <td>{{dado.block}}</td>
-      <td><button (click)="delete(dado.id)" class="delete-button">Delete</button></td>
-    </tr>
-  </table>
-</div>
+      <tr class="container-content" *ngFor="let dado of dados">
+        <td>{{dado.id}}</td>
+        <td>{{dado.parkingSpotNumber}}</td>
+        <td>{{dado.licensePlateCar}}</td>
+        <td>{{dado.brandCar}}</td>
+        <td>{{dado.modelCar}}</td>
+        <td>{{dado.colorCar}}</td>
+        <td>{{dado.registrationDate}}</td>
+        <td>{{dado.responsibleName}}</td>
+        <td>{{dado.apartment}}</td>
+        <td>{{dado.block}}</td>
+        <td><button (click)="delete(dado.id)" class="delete-button">Delete</button></td>
+      </tr>
+    </table>
+    <div  *ngIf="!loading">
+      <div class="spinner"></div>
+    </div>
+  </div>
+
 <app-footer></app-footer>
