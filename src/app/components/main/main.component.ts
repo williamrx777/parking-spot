@@ -12,7 +12,7 @@ export class MainComponent{
   constructor(private http:HttpClient) {}
 
   cadaster():void {
-    this.http.post('http://localhost:8080/parking-spot', this.cadasterParking).subscribe((data:any)=> {
+    this.http.post('https://park-rvud.onrender.com/parking-spot', this.cadasterParking).subscribe((data:any)=> {
       this.cadasterParking = data;
       this.mensagem = 'Vaga reservada com sucesso';
     },
